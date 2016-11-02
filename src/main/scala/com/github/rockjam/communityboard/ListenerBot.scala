@@ -19,6 +19,9 @@ package com.github.rockjam.communityboard
 import info.mukel.telegrambot4s._, api._, methods._, models._, Implicits._
 
 class ListenerBot(botToken: String, _url: String, _port: Int) extends TelegramBot with Webhook {
+  system.log.warning(s"bot token: ${botToken}, url: ${_url}, port: ${_port}")
+  println(s"bot token: ${botToken}, url: ${_url}, port: ${_port}")
+
   def token: String      = botToken
   def port: Int          = _port
   def webhookUrl: String = _url
