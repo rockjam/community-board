@@ -1,5 +1,6 @@
 lazy val `community-board` = project
   .in(file("."))
+  .settings(libraryDependencies ++= Dependencies.communityBoard)
   .enablePlugins(AutomateHeaderPlugin, GitVersioning)
 
 libraryDependencies ++= Vector(
