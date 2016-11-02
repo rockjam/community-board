@@ -18,7 +18,7 @@ package com.github.rockjam.communityboard
 
 import com.typesafe.config.ConfigFactory
 
-class Main {
+object Main extends App {
 
   private val config = ConfigFactory.load()
 
